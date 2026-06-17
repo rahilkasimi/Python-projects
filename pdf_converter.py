@@ -165,7 +165,7 @@ def main():
                 window["-STATUS_EXCEL-"].update(message, text_color=color)
                 window["-EXTRACT_TABLES-"].update(disabled=False)
                 if success:
-                    sg.popup_yes_no(f"Success!\n{message}\n\nOpen output folder?", title="Extraction Complete")
+                    sg.popup_yes_no(f"Success!, title="Extraction Complete")
 
             threading.Thread(target=thread_extract_tables, daemon=True).start()
 
